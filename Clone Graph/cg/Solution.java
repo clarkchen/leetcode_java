@@ -8,6 +8,7 @@ import java.util.Queue;
 
 public class Solution {
 	public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+		if(node==null)return null;
 		UndirectedGraphNode root =  new UndirectedGraphNode(node.label),cur,temp;
 		
 		Queue<UndirectedGraphNode> q = new LinkedList<UndirectedGraphNode>();
