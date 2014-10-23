@@ -33,9 +33,39 @@ public class MyList {
 		
 		
 	}
+	//when the arraylist is integer, the remove by object should be declared as object
+	void removeTest()
+	{
+		ArrayList<Integer> res = new ArrayList<Integer>();
+		res.add(1);res.add(2);res.add(3);
+		
+		System.out.println(res);
+		res.remove(2);//delete index 2
+		System.out.println(res);
+		res.remove(1);//delete index 2
+		System.out.println(res);
+		
+		res.add(2);
+		res.remove((Object)1);//remove the value 1 not index 1
+		System.out.println(res);
+		
+	}
+	//insert test, insert into position i , and the later elements are shifted to right;
+	public void insertTest()
+	{
+		ArrayList<Integer> res = new ArrayList<Integer>();
+		res.add(1);res.add(2);res.add(3);
+		System.out.println(res);
+		res.add(0, 4);
+		System.out.println(res);
+		res.remove(1);
+		System.out.println(res);
+		res.add(1, 1);
+		System.out.println(res);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MyList d=  new MyList();
-		d.test2();
+		d.insertTest();
 	}
 }
