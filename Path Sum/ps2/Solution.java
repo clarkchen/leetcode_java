@@ -1,7 +1,9 @@
 package ps2;
+import ps1.TreeNode;
+
+
 import java.util.*;
 
-import ps1.TreeNode;
 
 public class Solution {
 	
@@ -11,8 +13,8 @@ public class Solution {
 	}
 	public List<List<Integer>> pathSum(TreeNode root, int sum) {
 		
-		if(root==null) return new ArrayList<List<Integer>>();;
-		if(isLeaf(root) && root.val!=sum)return null;
+		if(root==null) return new ArrayList<List<Integer>>();
+		if(isLeaf(root) && root.val!=sum)return new ArrayList<List<Integer>>();
 		
 		List<List<Integer>> rtPathSet =new ArrayList<List<Integer>>();
 		
