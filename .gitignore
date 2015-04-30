@@ -1,6 +1,6 @@
 *.class
 .classpath
-.project
-bin/iotest/test.txt
-test.txt
+.idea
 bin
+!test
+target
