@@ -19,7 +19,7 @@ public class listsort {
 	}
 	//升序排列
 	public class IncreaseComparator implements Comparator<NodeValue> {
-	    @Override
+
 	    public int compare(NodeValue o1, NodeValue o2) {
 	        return o1.v-o2.v;
 	    }
@@ -27,7 +27,6 @@ public class listsort {
 	
 	//降序排列
 	public class DecreaseComparator implements Comparator<NodeValue> {
-	    @Override
 	    public int compare(NodeValue o1, NodeValue o2) {
 	        return o2.v-o1.v;
 	    }
